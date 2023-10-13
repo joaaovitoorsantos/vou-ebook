@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 export default function Home() {
   const [formData, setFormData] = useState({
-    name: '',
+    nome: '',
     email: '',
     celular: ''
   });
@@ -17,7 +17,7 @@ export default function Home() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://script.google.com/a/macros/grupovou.com.br/s/AKfycbzyUloRj5bordvnjEXT0qzWb47z7Ro-5mHbKVGP8PIE8UiMsMbmMRPfEarG8K0iJFBt5A/exec', {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbz8kIV9XjNJaDI8fypA8x25MUfw-R5zFE4upOsnphxShZzn9x-dHo5LpvwuIOW-pfOBNA/exec', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
@@ -29,14 +29,13 @@ export default function Home() {
         alert('Dados enviados com sucesso!');
       }
     } catch (error) {
-      alert('Ocorreu um erro ao enviar os dados.');
+      console.log(error)
     }
   };
   
-
   return (
     <div className="bg-gradient-to-br from-gray-800 to-black-900 flex flex-col justify-center items-center min-h-screen">
-      <form onSubmit={handleSubmit} className="w-1/3">
+      <form onSubmit={handleSubmit}>
       <img src="https://i.imgur.com/Hiz04ZN.png" alt="Logo" width={250} className="mx-auto mb-6" />
         <div className="mb-4">
           <label className="block mb-2">Nome</label>
@@ -59,9 +58,9 @@ export default function Home() {
           />
         </div>
         <div className="mb-4">
-          <label className="block mb-2">Celular (WhatsApp)</label>
+          <label className="block mb-2">Celular</label>
           <input
-            type="celular"
+            type="text"
             name="celular"
             value={formData.celular}
             onChange={handleChange}
