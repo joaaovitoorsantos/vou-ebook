@@ -11,9 +11,15 @@ export default function Home() {
     <>
       <Header/>
       <SecondSection/>
-      <ThirdSection/>
+
+      {/* <ThirdSection/> */}
       <FourthSection/>
-      <FifthSection/>
+      {/* <FifthSection/> */}
+
+   
+      <FourthSection/>
+
+
       <LastSection/>
     </>
   )
