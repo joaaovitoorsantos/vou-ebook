@@ -17,10 +17,10 @@ export default function Home() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://script.google.com/macros/s/AKfycbz8kIV9XjNJaDI8fypA8x25MUfw-R5zFE4upOsnphxShZzn9x-dHo5LpvwuIOW-pfOBNA/exec', {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbyEFaRju8TDuRoIR6mXOnlhqDm6PIpTMEmi_LL9oxtT/dev', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded'
+          'Content-Type': 'application/x-www-form-urlencoded',
         },
         body: new URLSearchParams(formData).toString()
       });
@@ -29,9 +29,10 @@ export default function Home() {
         alert('Dados enviados com sucesso!');
       }
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
   };
+  
   
   return (
     <div className="bg-gradient-to-br from-gray-800 to-black-900 flex flex-col justify-center items-center min-h-screen">
