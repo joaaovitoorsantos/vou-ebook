@@ -1,6 +1,7 @@
 export default function Header() {
 
     const videoURL = "https://www.youtube.com/embed/Mz2u4CR3-sE?autoplay=1&mute=1"
+
     return (
         <>
             <div className="bg-gradient-to-br from-gray-800 to-black-900 text-white py-24 px-8 flex flex-col items-center justify-center space-y-12">
@@ -21,6 +22,17 @@ export default function Header() {
                         title="Teste"
                     >
                     </iframe>
+                <h1 className="text-4xl font-extrabold mb-4 text-center">Um guia completo para você começar a ganhar dinheiro alugando carros!</h1>
+
+                <div className="bg-gray-800 p-6 rounded-lg shadow-xl text-center">
+                    <video
+                        width="320px"
+                        autoPlay
+                        controls
+                        muted
+                    >
+                        <source src="/video.mp4" type="video/mp4" />
+                    </video>
                 </div>
 
                 <p className="text-lg text-center mt-6">Assista ao vídeo todo! <br />

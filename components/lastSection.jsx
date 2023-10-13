@@ -4,8 +4,14 @@ export default function LastSection() {
 
             <h2 className="text-4xl font-extrabold mb-4 tracking-wide">Comece agora você também</h2>
             <p className="text-2xl mb-4">Pronto! Agora é sua hora de dar o primeiro passo!</p>
+
             <p className="text-base">E com foco, você pode se tornar um grande empreendedor de locação de carros na sua cidade.</p>
             <p className="text-lg font-semibold mt-4">Está pronto para começar?</p>
+
+            <p className="text-lg">Ao invés de <span className="line-through">R$80mil</span> em uma franquia, seu primeiro passo custará apenas <span className="text-red-600 font-bold text-xl">R$19,90</span>.</p>
+            <p className="text-base">E com foco, você pode se tornar um grande empreendedor de locação de carros na sua cidade.</p>
+            <p className="text-lg font-semibold mt-4">Está pronto para começar?</p>
+
         </div>
     )
 }
