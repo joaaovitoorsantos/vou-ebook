@@ -8,9 +8,6 @@ export default function LastSection() {
             <p className="text-base">E com foco, você pode se tornar um grande empreendedor de locação de carros na sua cidade.</p>
             <p className="text-lg font-semibold mt-4">Está pronto para começar?</p>
 
-            <p className="text-lg">Ao invés de <span className="line-through">R$80mil</span> em uma franquia, seu primeiro passo custará apenas <span className="text-red-600 font-bold text-xl">R$19,90</span>.</p>
-            <p className="text-base">E com foco, você pode se tornar um grande empreendedor de locação de carros na sua cidade.</p>
-            <p className="text-lg font-semibold mt-4">Está pronto para começar?</p>
 
         </div>
     )

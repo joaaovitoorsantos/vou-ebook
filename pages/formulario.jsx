@@ -17,7 +17,7 @@ export default function Home() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://script.google.com/a/macros/grupovou.com.br/s/AKfycbwHET1wJFxkXBac6ZD60vRV4hO7_Eo9dqgWk7i3mIhY6skXcwEGICkfOzvFoTtyxpR1-g/exec', {
+      const response = await fetch('https://script.google.com/a/macros/grupovou.com.br/s/AKfycbzyUloRj5bordvnjEXT0qzWb47z7Ro-5mHbKVGP8PIE8UiMsMbmMRPfEarG8K0iJFBt5A/exec', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded'

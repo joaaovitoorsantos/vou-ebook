@@ -22,25 +22,14 @@ export default function Header() {
                         title="Teste"
                     >
                     </iframe>
-                    <h1 className="text-4xl font-extrabold mb-4 text-center">Um guia completo para você começar a ganhar dinheiro alugando carros!</h1>
-
-                    <div className="bg-gray-800 p-6 rounded-lg shadow-xl text-center">
-                        <video
-                            width="320px"
-                            autoPlay
-                            controls
-                            muted
-                        >
-                            <source src="/video.mp4" type="video/mp4" />
-                        </video>
-                    </div>
-
-                    <p className="text-lg text-center mt-6">Assista ao vídeo todo! <br />
-                        Entenda melhor sobre como entrar nesse mercado com a gente. <br />
-                        Uma oportunidade única para quem é do Paraná e Mato Grosso do Sul.
-                    </p>
-
                 </div>
+
+
+                <p className="text-lg text-center mt-6">Assista ao vídeo todo! <br />
+                    Entenda melhor sobre como entrar nesse mercado com a gente. <br />
+                    Uma oportunidade única para quem é do Paraná e Mato Grosso do Sul.
+                </p>
+
             </div>
         </>
     )

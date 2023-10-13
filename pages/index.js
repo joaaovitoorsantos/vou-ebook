@@ -11,16 +11,10 @@ export default function Home() {
     <>
       <Header/>
       <SecondSection/>
-
       {/* <ThirdSection/> */}
       <FourthSection/>
       {/* <FifthSection/> */}
-
-   
-      <FourthSection/>
-
-
-      <LastSection/>
+       <LastSection/>
     </>
   )
 }
