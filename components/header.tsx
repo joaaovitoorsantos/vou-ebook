@@ -1,3 +1,4 @@
+//@ts-nocheck
 export default function Header() {
 
     const videoURL = "https://www.youtube.com/embed/Mz2u4CR3-sE?autoplay=1&mute=1"

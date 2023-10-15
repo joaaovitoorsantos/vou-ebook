@@ -1,6 +1,9 @@
 import { useState } from 'react';
+import axios from 'axios'
+import { useRouter } from 'next/router';
 
 export default function Home() {
+  const router = useRouter()
   const [formData, setFormData] = useState({
     nome: '',
     email: '',
@@ -17,22 +20,15 @@ export default function Home() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://script.google.com/macros/s/AKfycbyEFaRju8TDuRoIR6mXOnlhqDm6PIpTMEmi_LL9oxtT/dev', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: new URLSearchParams(formData).toString()
-      });
-      const data = await response.json();
-      if (data.result === 'success') {
-        alert('Dados enviados com sucesso!');
+      const response = await axios.post('/api/formulario', formData);  // Altere a URL para o caminho do seu endpoint
+  
+      if (response.data && response.data.id) {
+        router.push('/sucesso')
       }
     } catch (error) {
       console.log(error);
     }
   };
-  
   
   return (
     <div className="bg-gradient-to-br from-gray-800 to-black-900 flex flex-col justify-center items-center min-h-screen">
