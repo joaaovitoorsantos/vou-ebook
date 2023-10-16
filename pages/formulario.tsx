@@ -10,6 +10,17 @@ export default function Home() {
     celular: ''
   });
 
+    // Função para validar os campos do formulário
+    const validateForm = () => {
+      for (let field in formData) {
+        if (!formData[field].trim()) {
+          alert(`Por favor, preencha o campo ${field}.`);
+          return false;
+        }
+      }
+      return true;
+    };
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -19,6 +30,9 @@ export default function Home() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!validateForm()) return;
+
     try {
       const response = await axios.post('/api/formulario', formData);  // Altere a URL para o caminho do seu endpoint
   
