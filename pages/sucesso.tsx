@@ -15,7 +15,7 @@ export default function Sucesso() {
         <p className="text-gray-600 mb-6">
           Fique tranquilo, acesse o grupo e aguarde um pouco... logo nossa equipe irá chamar você! Até mais... =D
         </p>
-        <Link legacyBehavior href="https://wa.me/5511999999999?text=Quero%20entrar%20no%20grupo%20do%20WhatsApp">
+        <Link legacyBehavior href="https://chat.whatsapp.com/Dj4AGzXJQakIAIZ8ANK91f">
           <a target="_blank" rel="noopener noreferrer" className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded transition duration-300">
             Entrar no Grupo do WhatsApp
           </a>
