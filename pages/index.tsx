@@ -5,7 +5,7 @@ import ThirdSection from '@components/ThirdSection'
 import FourthSection from '@components/fourthSection'
 import FifthSection from '@components/fifthSection'
 import LastSection from '@components/lastSection'
-import Carousel from '../components/Carousel';
+import Carousel from '@components/Carousel';
 
 export default function Home() {
 
@@ -22,9 +22,7 @@ export default function Home() {
     <>
       <Header />
       <SecondSection />
-      {/* <ThirdSection/> */}
       <FourthSection />
-      {/* <FifthSection/> */}
       <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
         <div className="w-full sm:w-4/5 md:w-3/4 lg:w-2/3 xl:w-1/2">
           <Carousel images={images} />

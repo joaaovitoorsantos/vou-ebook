@@ -1,4 +1,7 @@
-export default function LastSection() {
+import { useRouter } from "next/router"
+
+export default function LastSection() {    
+    const router = useRouter()
     return (
         <>
             <div className="flex items-center justify-center bg-white">
@@ -12,6 +15,10 @@ export default function LastSection() {
                 <p className="text-base">E com foco, você pode se tornar um grande empreendedor de locação de carros na sua cidade.</p>
                 <p className="text-lg font-semibold mt-4">Está pronto para começar?</p>
 
+
+                <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full transition duration-200"
+                onClick={() => router.push('/formulario')}
+                >Começar agora</button>
 
             </div>
         </>
