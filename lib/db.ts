@@ -1,5 +1,5 @@
 import mysql from 'mysql2'
-
+//BANCO DE DADOS
 const dbConfig = {
   host: process.env.HOST,
   user: process.env.USER,
