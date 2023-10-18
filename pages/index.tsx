@@ -22,8 +22,8 @@ export default function Home() {
   const settings = {
     focusOnSelect: true,
     infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 2000,

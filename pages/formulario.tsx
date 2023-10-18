@@ -45,7 +45,7 @@ export default function Home() {
   };
   
   return (
-    <div className="bg-gradient-to-br from-gray-800 to-black-900 flex flex-col justify-center items-center min-h-screen">
+    <div className="bg-black to-black-900 flex flex-col justify-center items-center min-h-screen">
       <form onSubmit={handleSubmit}>
       <img src="https://i.imgur.com/Hiz04ZN.png" alt="Logo" width={250} className="mx-auto mb-6" />
         <div className="mb-4">
@@ -78,7 +78,7 @@ export default function Home() {
             className="w-full p-2 border rounded text-black"
           />
         </div>
-        <button type="submit" className="bg-black-500 text-white px-4 py-2 rounded">
+        <button type="submit" className="bg-red-500 text-white px-4 py-2 rounded w-max">
           Enviar
         </button>
       </form>

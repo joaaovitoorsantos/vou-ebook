@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Sucesso() {
   return (
-    <div className="bg-gradient-to-br from-gray-800 to-black-900 flex flex-col justify-center items-center min-h-screen p-4">
+    <div className="bg-black to-black-900 flex flex-col justify-center items-center min-h-screen p-4">
       <img src="https://i.imgur.com/Hiz04ZN.png" alt="Logo" width={200} className="mx-auto mb-6 animate-bounce" />
 
       <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-lg text-center">
