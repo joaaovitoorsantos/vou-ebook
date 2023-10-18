@@ -30,7 +30,7 @@ export default function Header() {
 
                 <p className="text-lg text-center mt-6">Assista ao vídeo todo! <br />
                     Entenda melhor sobre como entrar nesse mercado com a gente. <br />
-                    Uma oportunidade única para quem é do Paraná e Mato Grosso do Sul.
+                    Uma oportunidade única para quem quer ter sua LOCADORA sem precisar comprar carro.
                 </p>
 
                 <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full transition duration-200"
