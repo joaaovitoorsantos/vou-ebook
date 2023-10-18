@@ -1,7 +1,9 @@
 //@ts-nocheck
+import { useRouter } from "next/router"
 export default function Header() {
 
-    const videoURL = "https://www.youtube.com/embed/Mz2u4CR3-sE?autoplay=1&mute=1"
+    const router = useRouter()
+    const videoURL = "https://www.youtube.com/embed/uwCAU7Lt2sc?autoplay=1&mute=1"
 
     return (
         <>
@@ -15,8 +17,8 @@ export default function Header() {
 
                 <div className="bg-gray-800 p-6 rounded-lg shadow-xl text-center">
                     <iframe
-                        width={320}
-                        height={480}
+                        width={'auto'}
+                        height={'400'}
                         src={videoURL}
                         frameborder="0"
                         allowFullScreen
