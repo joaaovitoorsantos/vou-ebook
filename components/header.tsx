@@ -7,7 +7,7 @@ export default function Header() {
 
     return (
         <>
-            <div className="bg-gradient-to-br from-gray-800 to-black-900 text-white py-24 px-8 flex flex-col items-center justify-center space-y-12">
+            <div className="bg-black from-gray-800 to-black-900 text-white py-24 px-8 flex flex-col items-center justify-center space-y-12">
 
                 <img src="https://i.imgur.com/Hiz04ZN.png" alt="Logo" width={250} className="mx-auto" />
 
