@@ -46,7 +46,6 @@ export default function Home() {
       <Header />
       <SecondSection />
       <FourthSection />
-      <div className='bg-white'>
         <div className='w-full md:w-4/5 lg:w-3/4 xl:w-2/3 mx-auto px-8 sm:px-0 min-h-[300px]'>
           <Slider {...settings}>
             {images.map((img, index) => (
@@ -56,7 +55,6 @@ export default function Home() {
             ))}
           </Slider>
         </div>
-      </div>
 
 
       <LastSection />
