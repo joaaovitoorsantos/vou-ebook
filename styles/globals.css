@@ -29,3 +29,27 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Esta é a proporção para 16:9. Ajuste conforme necessário. */
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .video-container {
+      max-width: 70%;
+      height: 2px !important;
+      margin: 0 auto;
+  }
+}
