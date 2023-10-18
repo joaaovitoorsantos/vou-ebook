@@ -33,7 +33,7 @@ export default function Header() {
                     Uma oportunidade única para quem quer ter sua LOCADORA sem precisar comprar carro.
                 </p>
 
-                <button className="bg-red-900 hover:bg-blue-600 text-white py-2 px-6 rounded-full transition duration-200"
+                <button className="bg-red-900 hover:bg-red-800 font-medium text-white py-2 px-6 rounded-full transition duration-200"
                     onClick={() => router.push('/formulario')}
                 >Começar agora</button>
                 
