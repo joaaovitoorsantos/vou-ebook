@@ -12,7 +12,7 @@ export default function Header() {
                 <img src="https://i.imgur.com/Hiz04ZN.png" alt="Logo" width={250} className="mx-auto mb-6" />
 
                 <h1 className="text-4xl font-extrabold mb-4 text-center">
-                    Uma grande para você começar a ganhar dinheiro alugando carros na sua CIDADE!
+                    Oportunidade única para você começar...
                 </h1>
 
                 <div className="bg-gray-800 p-6 rounded-lg shadow-xl text-center">
