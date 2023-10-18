@@ -24,7 +24,10 @@ export default function Home() {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    speed: 500,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
     responsive: [
       {
         breakpoint: 640, // a partir de 640px
@@ -35,7 +38,10 @@ export default function Home() {
       {
         breakpoint: 1024, // a partir de 1024px
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          infinite: true,
+          dots: true
         }
       },
     ]
@@ -46,12 +52,16 @@ export default function Home() {
       <Header />
       <SecondSection />
       <FourthSection />
-      <div className='bg-white'>
-        <div className='w-full md:w-4/5 lg:w-3/4 xl:w-2/3 mx-auto px-8 sm:px-0 min-h-[300px]'>
+      <div className='bg-white flex flex-row items-center justify-center'>
+        <div style={{width: 'calc(100% - 60px)', height: 'auto'}}>
           <Slider {...settings}>
             {images.map((img, index) => (
               <div key={index} className="p-2">
-                <img className="mx-auto w-full h-full object-contain" src={img} alt={`Carrossel imagem ${index}`} />
+                <img className="" src={img} alt={`Carrossel imagem ${index}`} style={{
+                  width: 300,
+                  height: 300,
+                  objectFit: 'contain'
+                }}/>
               </div>
             ))}
           </Slider>

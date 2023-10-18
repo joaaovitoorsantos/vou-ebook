@@ -2,7 +2,7 @@ export default function SecondSection() {
     return (
         <div className="flex flex-col lg:flex-row items-center justify-center bg-gray-100 py-16 px-8 space-y-10 lg:space-y-0 lg:space-x-12">
 
-            <img src="https://i.imgur.com/aZVhudu.png" alt="Carros Vou!" className="mx-left lg:w-1/2 rounded-xl shadow-lg" />
+            <img src="https://i.imgur.com/TQ7FieE.jpg" alt="Carros Vou!" className="mx-left lg:w-1/2 rounded-xl shadow-lg" />
 
             <div className="lg:w-1/2 space-y-6 p-6 bg-white rounded-xl shadow-lg">
                 <h2 className="text-2xl font-bold mb-4 text-gray-800">Seja um Parceiro Vou!</h2>
