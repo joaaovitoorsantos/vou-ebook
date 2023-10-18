@@ -12,7 +12,7 @@ export default function LastSection() {
                 <p className="text-lg font-semibold mt-4">Está pronto para começar?</p>
 
 
-                <button className="bg-gray-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full transition duration-200"
+                <button className="bg-red-900 hover:bg-blue-600 text-white py-2 px-6 rounded-full transition duration-200"
                 onClick={() => router.push('/formulario')}
                 >Começar agora</button>
 
