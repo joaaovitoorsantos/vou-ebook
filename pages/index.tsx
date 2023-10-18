@@ -23,10 +23,10 @@ export default function Home() {
     focusOnSelect: true,
     infinite: true,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
+    speed: 5000,
+    autoplaySpeed: 5000,
     cssEase: "linear",
     responsive: [
       {
@@ -39,7 +39,7 @@ export default function Home() {
         breakpoint: 1024, // a partir de 1024px
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 4,
+          slidesToScroll: 1,
           infinite: true,
           dots: true
         }
