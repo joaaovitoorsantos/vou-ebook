@@ -12,8 +12,8 @@ export default function LastSection() {
                 <p className="text-lg font-semibold mt-4">Está pronto para começar?</p>
 
 
-                <button className="bg-red-900 hover:bg-red-800 font-medium text-white py-2 px-6 rounded-full transition duration-200"
-                onClick={() => router.push('/formulario')}
+                <button className="bg-green-500 hover:bg-green-600 font-medium text-white py-2 px-6 rounded-full transition duration-200"
+                    onClick={() => router.push('https://api.whatsapp.com/send?phone=5547999829477&text=Mais%20informações')}
                 >Começar agora</button>
 
             </div>
